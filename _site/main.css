@@ -1,0 +1,19 @@
+img {
+  max-width: 100%;
+}
+
+.mainNav {
+  height:100%;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  background: rgba(256,256,256,0.75);
+}
+
+#navWrapper {
+  position: relative;
+  top: 60%;
+  transform: translateY(-60%);
+}
+
+.spotlightOutput {}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kraatz - Front-End Capstone</title>
+  <link href="/bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="icon" type="image/jpeg" href="/img/favicon.ico">
+  <link rel="stylesheet" type="text/css" href="/main.css">
+</head>
+<body>
+  <main class="container-fluid">
+    <nav class="mainNav col-lg-4 col-md-3 col-sm-2 col-xs-2">
+      <div id="navWrapper">
+        <img src="/img/logo.png">
+        <h2>Navigation</h2>
+          <ul class="list-unstyled">
+            <li><a href="/#">Home</a></li>
+            <li><a href="/#portfolio">Portfolio</a></li>
+            <li><a href="/#blog">Blog</a></li>
+            <li><a href="/#contact">Contact</a></li>
+          </ul>
+      </div>
+    </nav>
+    <img src="https://unsplash.it/1920/400">
+    <section class="col-lg-offset-4 col-md-offset-3 col-sm-offset-2 col-xs-offset-2 col-lg-8 col-md-9 col-sm-10 col-xs-10 container">
+      <h2>Front-End Capstone</h2>
+<p>Posted 2016-09-09 00:00:00 -0500 by Matt Kraatz </p>
+<p>Next week marks the halfway point for my career at Nashville Software School, amazing how quickly that time has passed. To cap our front-end coursework, every student has independently developed a client-side application (hooked up to Firebase) that we are presenting to the entire school tomorrow . With almost two weeks devoted to the task, this was really the first opportunity we had to develop something fully-featured and–dare I say–cool.</p>
+
+<p>Today, each of my classmates presented their MVP as a “soft demo” to just our class, and I must say, I’m very impressed. Among 25 different applications, almost every one had at least one feature or view that wowed the audience and prompted a “how did you do that?!” question at the end of their demo. This struck me as inspirational, that just because your app doesn’t necessarily look as polished as Facebook (and probably has a few bugs under the carpet), doesn’t mean that it isn’t an impressive accomplishment. Everyone in the room had no trouble looking past the shiny exterior and appreciating the individual coding feats that everyone was able to achieve.</p>
+
+<p>Personally, I have a lot of frustrations with my final product, but that doesn’t stop me from being proud of what I’ve been able to accomplish so far. And I am by no means discouraged from continuing to work on this app in my free time over the next three months. That being said, this was a learning experience like no other and I wanted to share a few of my “lessons learned” from this project.</p>
+
+<h4 id="prioritize-features-and-know-when-to-give-up-or-ask-for-help">Prioritize features and know when to give up (or ask for help)</h4>
+
+<p>While I maintained a fairly extensive Trello board to organize my thoughts and maintain focus, I found myself getting distracted by that “shiny feature over there” more than once. Sometimes I was able to accomplish that feature quickly, sometimes it took me a while, and sometimes I couldn’t get it working at all. At the end of the day, especially if that feature didn’t come easily, I might have neglected a feature more important to the user experience because I wasn’t focused correctly on my priorities. This will be a little easier in a professional environment where I don’t get to determine the priority (the product owner does that), but is still a weakness I need to be aware of and improve upon.</p>
+
+<h4 id="know-how-your-frameworks-work-and-cooperate">Know how your frameworks work (and cooperate)</h4>
+
+<p>A lot of the major challenges I encountered while developing my project were specifically a result of combining TurnJS with AngularJS. See, a feature of TurnJS is to only keep 6 pages of your flipbook in the DOM at any one time (for resource utilization, I think). The problem is, when TurnJS removes that content from the DOM, all of the Angular bindings are destroyed and basically need to be recompiled before added back to the DOM to maintain functionality. The first time this happened, it took me hours to diagnose. After I understood that interaction, it was much easier to troubleshoot future Angular issues, and I started getting pretty creative coming up with workarounds.</p>
+
+<h4 id="dont-forget-to-have-fun">Don’t forget to have fun</h4>
+
+<p>The best decision I made was to pick an app that I actually had a need for personally. Being able to put myself in the shoes of the user, and work on features and functionality that I specifically have yearned for over the years, made all of the pitfalls and stressful moments much easier to power through.</p>
+
+<p>Curious to check out my app? It’s live here, bugs and all: https://groupme-memories.firebaseapp.com</p>
+
+
+    </section>
+  </main>
+<script type="text/javascript" src="/bower_components/jquery/dist/jquery.min.js"></script>
+<script type="text/javascript" src="/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/scripts.js"></script>
+</body>
+</html>
