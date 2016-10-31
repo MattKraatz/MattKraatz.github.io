@@ -1,58 +1,25 @@
-<!DOCTYPE html>
-<html>
-<head>
- <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>M.Kraatz - Home</title>
-  <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="icon" type="image/jpeg" href="img/favicon.ico">
-  <link rel="stylesheet" type="text/css" href="main.css">
-</head>
-<body>
-  <main class="container-fluid">
-    <nav class="mainNav col-lg-4 col-md-3 col-sm-2 col-xs-2">
-      <div id="navWrapper">
-        <img src="img/logo.png">
-        <h2>Navigation</h2>
-          <ul class="list-unstyled">
-            <li><a href="#">Home/Blog</a></li>
-            <li><a href="#">Portfolio</a></li>
-            <li><a href="#">Contact</a></li>
-          </ul>
-      </div>
-    </nav>
-    <img src="https://unsplash.it/1920/400">
-    <section class="col-lg-offset-4 col-md-offset-3 col-sm-offset-2 col-xs-offset-2 col-lg-8 col-md-9 col-sm-10 col-xs-10 container">
-      <section>
-      <h1>I am the spotlight area</h1>
+---
+  title: Home
+  layout: default
+---
+
+      <section id="portfolio">
+        <h1>I am the spotlight area</h1>
         <div class="spotlightOutput container-fluid"></div>
       </section>
-      <h1>I am the blog area</h1>
-      <h3>I gotta piss</h3>
-      <p>Now that there is the Tec-9, a crappy spray gun from South Miami. This gun is advertised as the most popular gun in American crime. Do you believe that shit? It actually says that in the little book that comes with it: the most popular gun in American crime. Like they're actually proud of that shit.  </p>
-      <h3>Hold on to your butts</h3>
-      <p>You think water moves fast? You should see ice. It moves like it has a mind. Like it knows it killed the world once and got a taste for murder. After the avalanche, it took us a week to climb out. Now, I don't know exactly when we turned on each other, but I know that seven of us survived the slide... and only five made it out. Now we took an oath, that I'm breaking now. We said we'd say it was the snow that killed the other two, but it wasn't. Nature is lethal but it doesn't hold a candle to man. </p>
-      <h3>Are you ready for the truth?</h3>
-      <p>Well, the way they make shows is, they make one show. That show's called a pilot. Then they show that show to the people who make shows, and on the strength of that one show they decide if they're going to make more shows. Some pilots get picked and become television programs. Some don't, become nothing. She starred in one of the ones that became nothing. </p>
-      <h3>I gotta piss</h3>
-      <p>Now that there is the Tec-9, a crappy spray gun from South Miami. This gun is advertised as the most popular gun in American crime. Do you believe that shit? It actually says that in the little book that comes with it: the most popular gun in American crime. Like they're actually proud of that shit.  </p>
-      <h3>I gotta piss</h3>
-      <p>Do you see any Teletubbies in here? Do you see a slender plastic tag clipped to my shirt with my name printed on it? Do you see a little Asian child with a blank expression on his face sitting outside on a mechanical helicopter that shakes when you put quarters in it? No? Well, that's what you see at a toy store. And you must think you're in a toy store, because you're here shopping for an infant named Jeb. </p>
-      <h3>Hold on to your butts</h3>
-      <p>Now that we know who you are, I know who I am. I'm not a mistake! It all makes sense! In a comic, you know how you can tell who the arch-villain's going to be? He's the exact opposite of the hero. And most times they're friends, like you and me! I should've known way back when... You know why, David? Because of the kids. They called me Mr Glass. </p>
-      <h3>I'm serious as a heart attack</h3>
-      <p>My money's in that office, right? If she start giving me some bullshit about it ain't there, and we got to go someplace else and get it, I'm gonna shoot you in the head then and there. Then I'm gonna shoot that bitch in the kneecaps, find out where my goddamn money is. She gonna tell me too. Hey, look at me when I'm talking to you, motherfucker. You listen: we go in there, and that nigga Winston or anybody else is in there, you the first motherfucker to get shot. You understand? </p>
-      <h3>Is she dead, yes or no?</h3>
-      <p>The path of the righteous man is beset on all sides by the iniquities of the selfish and the tyranny of evil men. Blessed is he who, in the name of charity and good will, shepherds the weak through the valley of darkness, for he is truly his brother's keeper and the finder of lost children. And I will strike down upon thee with great vengeance and furious anger those who would attempt to poison and destroy My brothers. And you will know My name is the Lord when I lay My vengeance upon thee. </p>
-      <h3>No man, I don't eat pork</h3>
-      <p>Do you see any Teletubbies in here? Do you see a slender plastic tag clipped to my shirt with my name printed on it? Do you see a little Asian child with a blank expression on his face sitting outside on a mechanical helicopter that shakes when you put quarters in it? No? Well, that's what you see at a toy store. And you must think you're in a toy store, because you're here shopping for an infant named Jeb. </p>
-      <h3>Uuummmm, this is a tasty burger!</h3>
-      <p>Now that there is the Tec-9, a crappy spray gun from South Miami. This gun is advertised as the most popular gun in American crime. Do you believe that shit? It actually says that in the little book that comes with it: the most popular gun in American crime. Like they're actually proud of that shit.  </p>
-    </section>
-  </main>
-<script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
-<script type="text/javascript" src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-<script type="text/javascript" src="scripts.js"></script>
-</body>
-</html>
+      <section id="blog">
+        <h1>I am the blog area</h1>
+          <table class="table">
+            {% for post in site.posts %}
+              <tr>
+                <td>
+                  <a href="{{ post.url }}">{{ post.title }}</a><br>
+                  {{ post.excerpt }} <a href="{{ post.url }}"><span>...read more</span></a>
+                </td>
+              </tr>
+            {% endfor %}
+          </table>
+      </section>
+      <section id="contact">
+        <h1>I am the contact area</h1>
+      </section>
