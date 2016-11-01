@@ -1,7 +1,5 @@
 ---
 title: Beyond the Basics
-date: July 18, 2016
-author: Matt Kraatz
 ---
 
 I'm still getting a feel for the pacing at Nashville Software School, and resetting my expectations along the way. Perhaps there is no typical pacing--except for "everything at light speed"--as one might expect from a professional setting, which is potentially by design.

@@ -1,7 +1,5 @@
 ---
 title: Initial thoughts on c#
-date: October 13, 2016
-author: Matt Kraatz
 ---
 
 Having just started the second half of the curriculum here at Nashville Software School, I am neck deep in C#. It's been a very humbling reminder of my initial feelings three months ago with JavaScript, when I had just started NSS and was desperately trying to master the syntax and possibilities for my first programming language. But that reminder is encouraging, seeing how far I've come in a short three months, I'm confident that I can do it again with this new language, and potentially accomplish even more. In the meantime, I've found it surprisingly refreshing to take a break from my C# studies by working on some side projects I had started in JavaScript, where I actually know my around (enough).

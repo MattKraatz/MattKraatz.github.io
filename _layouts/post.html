@@ -3,5 +3,5 @@ layout: default
 ---
 
 <h2>{{ page.title }}</h2>
-<p>Posted {{ page.date }} by {{ page.author }} </p>
+<p>Posted {{ page.date | date: "%B %-d, %Y"}} by Matt Kraatz </p>
 {{ content }}

@@ -1,7 +1,5 @@
 ---
 title: Front-End Capstone
-date: September 9, 2016
-author: Matt Kraatz
 ---
 
 Next week marks the halfway point for my career at Nashville Software School, amazing how quickly that time has passed. To cap our front-end coursework, every student has independently developed a client-side application (hooked up to Firebase) that we are presenting to the entire school tomorrow . With almost two weeks devoted to the task, this was really the first opportunity we had to develop something fully-featured and--dare I say--cool.

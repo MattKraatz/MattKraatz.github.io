@@ -1,4 +1,4 @@
-$.getJSON("spotlight.json").then(d => spotPrint(d.spotlight))
+$.getJSON("/spotlight.json").then(d => spotPrint(d.spotlight))
 
 function spotPrint(content) {
   for (i in content) {

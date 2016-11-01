@@ -1,7 +1,5 @@
 ---
 title: Beginner product management
-date: August 2, 2016
-author: Matt Kraatz
 ---
 
 At some point in High School I learned that finishing a creative thought is really hard to do. I remember performing a song I wrote to 1000+ people at a school talent show, and even in the green room before the show I was committing rewrites. Perfection is a fairly impossible goal, but as a creator it's hard to settle for anything less; it's hard to stop working on any project (well, deadlines help).

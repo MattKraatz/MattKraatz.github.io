@@ -1,7 +1,5 @@
 ---
 title: Final thoughts on Front-End Development
-date: October 4, 2016
-author: Matt Kraatz
 ---
 
 As I dive headfirst into server-side development with C#, I wanted to take a moment to reflect on what I've learned over the past three months, and what I hope to accomplish with the last half of my Nashville Software School career. While I'm sure this is only the beginning of my engagement with front-end development (I mean, I've only just dipped my toe into the water here), my experience with Javascript has given me some expectation of what to expect on the server-side.

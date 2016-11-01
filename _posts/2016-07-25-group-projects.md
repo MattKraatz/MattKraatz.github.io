@@ -1,7 +1,5 @@
 ---
 title: Group projects
-date: July 25, 2016
-author: Matt Kraatz
 ---
 
 A couple of times last week, for most of the day the class was split up into small groups of three to complete an assignment. Primarily, these exercises were intended to introduce collaborating via git, but I was also introduced to the challenges and value of coding in teams.

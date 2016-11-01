@@ -1,7 +1,5 @@
 ---
 title: First week
-date: July 11, 2016
-author: Matt Kraatz
 ---
 
 Four months ago I decided to shift my career's trajectory to the world of software development, and last week that journey officially began when I had my first day of class at [Nashville Software School](http://nashvillesoftwareschool.com/) (NSS). In that short interim I've traveled several thousand miles around the country, been a groomsman in two weddings, experienced four music festivals, created hundreds of snaps and completed 80+ hours of prework for NSS. My transition back to a normal routine has been going well.

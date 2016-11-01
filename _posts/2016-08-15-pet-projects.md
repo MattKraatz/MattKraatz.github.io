@@ -1,7 +1,5 @@
 ---
 title: My first pet projects
-date: August 15, 2016
-author: Matt Kraatz
 ---
 
 One of the biggest challenges I've faced about learning in a classroom is relating my coursework to current, real-world applications. Don't get me wrong, understanding theory is essential to mastering the concept, but it's all for naught if you can't apply that concept to a real project. Similarly, being hyper-focused on a single topic is required to pick up the fundamentals, but without drawing relationships to your existing knowledge base it can feel like learning in a silo.
