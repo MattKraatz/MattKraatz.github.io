@@ -11,22 +11,23 @@
 </head>
 <body>
   <main class="container-fluid">
-    <nav class="mainNav col-lg-4 col-md-3 col-sm-2 col-xs-2">
-      <div id="navWrapper">
-        <img src="/img/logo.png">
-        <h2>Navigation</h2>
-          <ul class="list-unstyled">
-            <li><a href="/#">Home</a></li>
-            <li><a href="/#portfolio">Portfolio</a></li>
-            <li><a href="/#blog">Blog</a></li>
-            <li><a href="/#contact">Contact</a></li>
-          </ul>
-      </div>
-    </nav>
-    <img src="/img/header.jpg">
-    <section class="col-lg-offset-4 col-md-offset-3 col-sm-offset-2 col-xs-offset-2 col-lg-8 col-md-9 col-sm-10 col-xs-10 container">
-      <h2>First week</h2>
-<p>Posted July 11, 2016 by Matt Kraatz </p>
+    <div>
+      <img id="headerImg" src="/img/header.jpg">
+      <nav class="mainNav col-lg-4 col-md-3 col-sm-2 col-xs-2">
+        <div id="navWrapper">
+          <img src="/img/logo.png">
+          <h2>Navigation</h2>
+            <ul class="list-unstyled">
+              <a href="/#top"><li>Home</li></a>
+              <a href="/#portfolio"><li>Portfolio</li></a>
+              <a href="/#blog"><li>Blog</li></a>
+              <a href="/#contact"><li>Contact</li></a>
+            </ul>
+        </div>
+      </nav>
+      <div class="col-lg-offset-3 col-md-offset-3 col-sm-offset-2 col-xs-offset-2 col-lg-9 col-md-9 col-sm-10 col-xs-10 container" id="contentSection">
+        <h2>First week</h2>
+<p style="font-style: italic">Posted July 11, 2016 by Matt Kraatz </p>
 <p>Four months ago I decided to shift my career’s trajectory to the world of software development, and last week that journey officially began when I had my first day of class at <a href="http://nashvillesoftwareschool.com/">Nashville Software School</a> (NSS). In that short interim I’ve traveled several thousand miles around the country, been a groomsman in two weddings, experienced four music festivals, created hundreds of snaps and completed 80+ hours of prework for NSS. My transition back to a normal routine has been going well.</p>
 
 <p>Being back in the classroom–almost five years exactly since I graduated from Belmont University–has been both refreshing and humbling. Humbling, in that I am intentionally putting myself into a domain that I know nothing about. But refreshing, likewise, when I hear from my teachers, mentors and colleagues that you never quite stop feeling like a sophomore (read: idiot).</p>
@@ -40,10 +41,23 @@
 <p>I am settling into the world of development, and getting only more excited as the class ramps up in intensity over the next couple of weeks. Stay tuned for more posts marking my development at Nashville Software School and in the developer community at large.</p>
 
 
-    </section>
+<hr>
+<div class="PageNavigation">
+  
+  
+    <div class="next">
+      <p>Next Post</p>
+      <a href="/2016/07/18/beyond-the-basics.html">Beyond the Basics &raquo;</a>
+    </div>
+  
+</div>
+
+      </div>
+    </div>
   </main>
 <script type="text/javascript" src="/bower_components/jquery/dist/jquery.min.js"></script>
 <script type="text/javascript" src="/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/bower_components/jquery.scrollTo/jquery.scrollTo.min.js"></script>
 <script type="text/javascript" src="/scripts.js"></script>
 </body>
 </html>

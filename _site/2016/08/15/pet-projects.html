@@ -11,22 +11,23 @@
 </head>
 <body>
   <main class="container-fluid">
-    <nav class="mainNav col-lg-4 col-md-3 col-sm-2 col-xs-2">
-      <div id="navWrapper">
-        <img src="/img/logo.png">
-        <h2>Navigation</h2>
-          <ul class="list-unstyled">
-            <li><a href="/#">Home</a></li>
-            <li><a href="/#portfolio">Portfolio</a></li>
-            <li><a href="/#blog">Blog</a></li>
-            <li><a href="/#contact">Contact</a></li>
-          </ul>
-      </div>
-    </nav>
-    <img src="/img/header.jpg">
-    <section class="col-lg-offset-4 col-md-offset-3 col-sm-offset-2 col-xs-offset-2 col-lg-8 col-md-9 col-sm-10 col-xs-10 container">
-      <h2>My first pet projects</h2>
-<p>Posted August 15, 2016 by Matt Kraatz </p>
+    <div>
+      <img id="headerImg" src="/img/header.jpg">
+      <nav class="mainNav col-lg-4 col-md-3 col-sm-2 col-xs-2">
+        <div id="navWrapper">
+          <img src="/img/logo.png">
+          <h2>Navigation</h2>
+            <ul class="list-unstyled">
+              <a href="/#top"><li>Home</li></a>
+              <a href="/#portfolio"><li>Portfolio</li></a>
+              <a href="/#blog"><li>Blog</li></a>
+              <a href="/#contact"><li>Contact</li></a>
+            </ul>
+        </div>
+      </nav>
+      <div class="col-lg-offset-3 col-md-offset-3 col-sm-offset-2 col-xs-offset-2 col-lg-9 col-md-9 col-sm-10 col-xs-10 container" id="contentSection">
+        <h2>My first pet projects</h2>
+<p style="font-style: italic">Posted August 15, 2016 by Matt Kraatz </p>
 <p>One of the biggest challenges I’ve faced about learning in a classroom is relating my coursework to current, real-world applications. Don’t get me wrong, understanding theory is essential to mastering the concept, but it’s all for naught if you can’t apply that concept to a real project. Similarly, being hyper-focused on a single topic is required to pick up the fundamentals, but without drawing relationships to your existing knowledge base it can feel like learning in a silo.</p>
 
 <p>After completing dozens and dozens of exercises throughout my first month at NSS, I’m very skilled at standing up bare-bone apps quickly, each satisfying a short list of focused requirements; but most of these I may never revisit. I’m just hitting the quarter mark this week of my journey through NSS, and with that I’ve started feeling an itch to develop more fully-fledged projects.</p>
@@ -42,10 +43,28 @@
 <p>If all goes well, at some point it will be difficult to prioritize personal projects, school projects, community projects, etc. Right now I’m just starting to dream and it feels pretty good.</p>
 
 
-    </section>
+<hr>
+<div class="PageNavigation">
+  
+  <div class="prev">
+    <p>Previous Post</p>
+    <a href="/2016/08/02/beginner-product-management.html">&laquo; Beginner product management</a>
+  </div>
+  
+  
+    <div class="next">
+      <p>Next Post</p>
+      <a href="/2016/09/28/front-end-captstone.html">Front-End Capstone &raquo;</a>
+    </div>
+  
+</div>
+
+      </div>
+    </div>
   </main>
 <script type="text/javascript" src="/bower_components/jquery/dist/jquery.min.js"></script>
 <script type="text/javascript" src="/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/bower_components/jquery.scrollTo/jquery.scrollTo.min.js"></script>
 <script type="text/javascript" src="/scripts.js"></script>
 </body>
 </html>

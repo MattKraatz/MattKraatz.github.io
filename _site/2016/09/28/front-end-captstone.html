@@ -11,22 +11,23 @@
 </head>
 <body>
   <main class="container-fluid">
-    <nav class="mainNav col-lg-4 col-md-3 col-sm-2 col-xs-2">
-      <div id="navWrapper">
-        <img src="/img/logo.png">
-        <h2>Navigation</h2>
-          <ul class="list-unstyled">
-            <li><a href="/#">Home</a></li>
-            <li><a href="/#portfolio">Portfolio</a></li>
-            <li><a href="/#blog">Blog</a></li>
-            <li><a href="/#contact">Contact</a></li>
-          </ul>
-      </div>
-    </nav>
-    <img src="/img/header.jpg">
-    <section class="col-lg-offset-4 col-md-offset-3 col-sm-offset-2 col-xs-offset-2 col-lg-8 col-md-9 col-sm-10 col-xs-10 container">
-      <h2>Front-End Capstone</h2>
-<p>Posted September 28, 2016 by Matt Kraatz </p>
+    <div>
+      <img id="headerImg" src="/img/header.jpg">
+      <nav class="mainNav col-lg-4 col-md-3 col-sm-2 col-xs-2">
+        <div id="navWrapper">
+          <img src="/img/logo.png">
+          <h2>Navigation</h2>
+            <ul class="list-unstyled">
+              <a href="/#top"><li>Home</li></a>
+              <a href="/#portfolio"><li>Portfolio</li></a>
+              <a href="/#blog"><li>Blog</li></a>
+              <a href="/#contact"><li>Contact</li></a>
+            </ul>
+        </div>
+      </nav>
+      <div class="col-lg-offset-3 col-md-offset-3 col-sm-offset-2 col-xs-offset-2 col-lg-9 col-md-9 col-sm-10 col-xs-10 container" id="contentSection">
+        <h2>Front-End Capstone</h2>
+<p style="font-style: italic">Posted September 28, 2016 by Matt Kraatz </p>
 <p>Next week marks the halfway point for my career at Nashville Software School, amazing how quickly that time has passed. To cap our front-end coursework, every student has independently developed a client-side application (hooked up to Firebase) that we are presenting to the entire school tomorrow . With almost two weeks devoted to the task, this was really the first opportunity we had to develop something fully-featured and–dare I say–cool.</p>
 
 <p>Today, each of my classmates presented their MVP as a “soft demo” to just our class, and I must say, I’m very impressed. Among 25 different applications, almost every one had at least one feature or view that wowed the audience and prompted a “how did you do that?!” question at the end of their demo. This struck me as inspirational, that just because your app doesn’t necessarily look as polished as Facebook (and probably has a few bugs under the carpet), doesn’t mean that it isn’t an impressive accomplishment. Everyone in the room had no trouble looking past the shiny exterior and appreciating the individual coding feats that everyone was able to achieve.</p>
@@ -48,10 +49,28 @@
 <p>Curious to check out my app? It’s live here, bugs and all: https://groupme-memories.firebaseapp.com</p>
 
 
-    </section>
+<hr>
+<div class="PageNavigation">
+  
+  <div class="prev">
+    <p>Previous Post</p>
+    <a href="/2016/08/15/pet-projects.html">&laquo; My first pet projects</a>
+  </div>
+  
+  
+    <div class="next">
+      <p>Next Post</p>
+      <a href="/2016/10/04/final-thoughts-front-end.html">Final thoughts on Front-End Development &raquo;</a>
+    </div>
+  
+</div>
+
+      </div>
+    </div>
   </main>
 <script type="text/javascript" src="/bower_components/jquery/dist/jquery.min.js"></script>
 <script type="text/javascript" src="/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/bower_components/jquery.scrollTo/jquery.scrollTo.min.js"></script>
 <script type="text/javascript" src="/scripts.js"></script>
 </body>
 </html>

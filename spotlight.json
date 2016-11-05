@@ -1,13 +1,13 @@
 {"spotlight": [{
-  "img_src": "https://unsplash.it/300/200",
+  "img_src": "/img/groupme.png",
   "title": "GroupMe Memories",
   "descrip": "GroupMe Memories: remembering your best group conversations"
 },{
-  "img_src": "https://unsplash.it/300/200",
-  "title": "Sample 2",
+  "img_src": "/img/200.jpeg",
+  "title": "Nashville History",
   "descrip": "Lorem"
 },{
-  "img_src": "https://unsplash.it/300/200",
-  "title": "Sample 3",
+  "img_src": "/img/200.jpeg",
+  "title": "Checkers",
   "descrip": "Lorem"
 }]}

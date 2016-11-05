@@ -1,0 +1,56 @@
+{"spotlight": [{
+  "img_src": "/img/logos/Angular.svg",
+  "title": "AngularJS"
+},{
+  "img_src": "/img/logos/Bootstrap.svg",
+  "title": "Bootstrap"
+},{
+  "img_src": "/img/logos/Bower.svg",
+  "title": "Bower"
+},{
+  "img_src": "/img/logos/Browserify.svg",
+  "title": "Browserify"
+},{
+  "img_src": "/img/logos/Css3.svg",
+  "title": "CSS3"
+},{
+  "img_src": "/img/logos/Firebase.svg",
+  "title": "Firebase"
+},{
+  "img_src": "/img/logos/Git.svg",
+  "title": "Git"
+},{
+  "img_src": "/img/logos/Github.svg",
+  "title": "Github"
+},{
+  "img_src": "/img/logos/Handlebars.svg",
+  "title": "Handlebars"
+},{
+  "img_src": "/img/logos/HTML5.svg",
+  "title": "HTML5"
+},{
+  "img_src": "/img/logos/Ionic.svg",
+  "title": "Ionic"
+},{
+  "img_src": "/img/logos/Javascript.svg",
+  "title": "Javascript"
+},{
+  "img_src": "/img/logos/Jekyll.svg",
+  "title": "Jekyll"
+},{
+  "img_src": "/img/logos/jQuery.svg",
+  "title": "jQuery"
+},{
+  "img_src": "/img/logos/NPM.svg",
+  "title": "NPM"
+},{
+  "img_src": "/img/logos/Raspberry_Pi.svg",
+  "title": "Raspberry Pi"
+},{
+  "img_src": "/img/logos/Sass.svg",
+  "title": "Sass"
+},{
+  "img_src": "/img/logos/Visual_Studio.svg",
+  "title": "Visual Studio"
+}
+]}

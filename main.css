@@ -1,13 +1,110 @@
+html {
+  background-color: rgb(244,244,249);
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  background-color: white;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+main {
+  padding: 0 !important;
+}
+
+.float-clear {
+  clear: both;
+}
+
+#contentSection {
+  padding: 15px 5px 15px 25px;
+}
+
+#contentSection section {
+  margin-top: 35px;
+}
+
+/* WELCOME SECTION */
+
+#welcome {
+  margin-top: 0px !important;
+}
+
+#welcome h1 {
+  margin-top: 10px;
+}
+
+#profile-photo {
+  border-radius: 50%;
+  margin: 1.75em 10px 10px;
+  max-width: 160px;
+  float: right;
+}
+
+/* LINKS */
+a {
+  color: #586F7C;
+}
+
 img {
   max-width: 100%;
 }
 
+/* HEADER IMAGE */
+#headerImg {
+  width: 100%;
+  /*-webkit-filter: grayscale(100%);
+  filter: grayscale(100%);*/
+}
+
+/* SPOTLIGHT */
+#portfolio h3 {
+  text-align: center;
+}
+
+.spotlightLogo {
+  border: 1px solid grey;
+}
+
+.techContainer {
+  margin-top: 15px;
+  height: 115px;
+  white-space: nowrap;
+  text-align: center;
+}
+
+.logoHelper {
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+
+.techContainer img {
+  max-height: 60%;
+  vertical-align: middle;
+}
+
+/* MAIN NAVIGATION */
+
+.mainNav li:hover {
+  background-color: #B8DBD9;
+}
+
+.nav-active {
+  background-color: #B8DBD9;
+}
+
+.mainNav a {
+  text-decoration: none;
+}
+
 .mainNav {
   height:100%;
+  max-width: 300px;
   position: fixed;
   top: 0px;
-  left: 0px;
-  background: rgba(256,256,256,0.75);
+  background: rgba(244,244,249,0.65);
 }
 
 #navWrapper {
@@ -16,4 +113,39 @@ img {
   transform: translateY(-60%);
 }
 
-.spotlightOutput {}
+/* Sticky Nav*/
+
+.stick {
+  top: 10% !important;
+  transform: translateY(-10%) !important;
+}
+
+/* BLOG EXCERPT SECTION */
+#blog li {
+  margin: 10px 25px 10px 0;
+  padding: 10px 0 10px 0;
+  border-bottom: 1px solid #2F4550;
+}
+
+
+/* BLOG POST NAVIGATION */
+.PageNavigation {
+  font-size: 14px;
+  display: block;
+  width: 100%;
+  overflow: hidden;
+  float: left;
+  margin: 0 0 0.5em 0;
+}
+
+.PageNavigation .prev {
+  display: inline-block;
+  width: 50%;
+}
+
+.PageNavigation .next {
+  display: inline-block;
+  width: 50%;
+  float: right;
+  text-align: right;
+}
