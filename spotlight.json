@@ -1,13 +1,13 @@
 {"spotlight": [{
   "img_src": "/img/groupme.png",
   "title": "GroupMe Memories",
-  "descrip": "GroupMe Memories: remembering your best group conversations"
+  "modal": "groupme"
 },{
   "img_src": "/img/200.jpeg",
   "title": "Nashville History",
-  "descrip": "Lorem"
+  "model": "Lorem"
 },{
   "img_src": "/img/200.jpeg",
   "title": "Checkers",
-  "descrip": "Lorem"
+  "model": "Lorem"
 }]}

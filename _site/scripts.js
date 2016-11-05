@@ -1,5 +1,5 @@
 // SMOOTH SCROLLING
-$("nav a").click(function(evn){
+$("#navWrapper a").click(function(evn){
     evn.preventDefault();
     $('html,body').scrollTo(this.hash, this.hash);
   });
@@ -11,8 +11,10 @@ function spotPrint(content) {
   for (i in content) {
     $('.spotlightOutput').append(`
       <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-        <img class="spotlightLogo" src="${content[i].img_src}">
-        <p>${content[i].title}</p>
+        <a href="#" data-toggle="modal" data-target="#${content[i].modal}">
+          <img class="spotlightLogo" src="${content[i].img_src}">
+          <p>${content[i].title}</p>
+        </a>
       </div>
       `)
   }
@@ -32,8 +34,18 @@ function techPrint(content) {
   }
 }
 
-// HIGHLIGHT NAVBAR ON SCROLL
+// STICKY NAVBAR ON SCROLL
+$(window).scroll(function(){
+  var window_top = $(window).scrollTop();
+  var div_top = $('#contentSection').offset().top;
+    if (window_top > div_top) {
+    $('#navWrapper').addClass('stick');
+  } else {
+    $('#navWrapper').removeClass('stick');
+  }
+});
 
+// HIGHLIGHT NAVBAR ON SCROLL
 var aChildren = $("#navWrapper ul").children();
 var aArray = [];
 for (var i=0; i < aChildren.length; i++) {
