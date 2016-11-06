@@ -1,23 +1,26 @@
 ---
 layout: default
 ---
+<div class="blogContent">
+  <p><a href="/#blog" class="linkBack">Back to All Posts</a></p>
 
-<h2>{{ page.title }}</h2>
-<p style="font-style: italic">Posted {{ page.date | date: "%B %-d, %Y"}} by Matt Kraatz </p>
-{{ content }}
+  <h2>{{ page.title }}</h2>
+  <p style="font-style: italic">Posted {{ page.date | date: "%B %-d, %Y"}} by Matt Kraatz </p>
+  {{ content }}
 
-<hr>
-<div class="PageNavigation">
-  {% if page.previous.url %}
-  <div class="prev">
-    <p>Previous Post</p>
-    <a href="{{page.previous.url}}">&laquo; {{page.previous.title}}</a>
-  </div>
-  {% endif %}
-  {% if page.next.url %}
-    <div class="next">
-      <p>Next Post</p>
-      <a href="{{page.next.url}}">{{page.next.title}} &raquo;</a>
+  <hr>
+  <div class="PageNavigation">
+    {% if page.previous.url %}
+    <div class="prev">
+      <p>Previous Post</p>
+      <a href="{{page.previous.url}}">&laquo; {{page.previous.title}}</a>
     </div>
-  {% endif %}
+    {% endif %}
+    {% if page.next.url %}
+      <div class="next">
+        <p>Next Post</p>
+        <a href="{{page.next.url}}">{{page.next.title}} &raquo;</a>
+      </div>
+    {% endif %}
+  </div>
 </div>
