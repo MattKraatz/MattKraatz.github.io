@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kraatz - Building a bot with machine learning</title>
+  <link href="/bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lora:400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,400i,700" rel="stylesheet">
+  <link rel="icon" type="image/jpeg" href="/img/favicon.ico">
+  <link rel="stylesheet" type="text/css" href="/main.css">
+</head>
+<body>
+  <main class="container-fluid">
+    <div>
+      <img id="headerImg" src="/img/header.jpg">
+      <nav class="mainNav col-lg-4 col-md-3 col-sm-2 col-xs-2">
+        <div id="navWrapper">
+          <img src="/img/logo.png">
+          <h2>Navigation</h2>
+            <ul class="list-unstyled">
+              <a href="/#welcome"><li>Home</li></a>
+              <a href="/#portfolio"><li>Portfolio</li></a>
+              <a href="/#blog"><li>Blog</li></a>
+              <a href="/#contact"><li>Contact</li></a>
+            </ul>
+        </div>
+        <div id="navLinks" class="col-lg-4 col-md-3 col-sm-2 col-xs-2">
+          <a href="https://github.com/MattKraatz" target="_blank">
+            <img src="/img/icons/Github.svg">
+          </a>
+          <a href="https://twitter.com/MattKraatz" target="_blank">
+            <img src="/img/icons/Twitter.svg">
+          </a>
+          <a href="https://www.linkedin.com/in/matthewkraatz" target="_blank">
+            <img src="/img/icons/Linkedin.svg">
+          </a>
+        </div>
+      </nav>
+      <div class="col-lg-offset-3 col-md-offset-3 col-sm-offset-2 col-lg-9 col-md-9 col-sm-10 col-xs-12 container" id="contentSection">
+        <div class="blogContent">
+  <p><a href="/#blog" class="linkBack">Back to All Posts</a></p>
+
+  <h2>Building a bot with machine learning</h2>
+  <p style="font-style: italic">Posted November 25, 2016 by Matt Kraatz </p>
+  <p>Bots really started gaining steam this year, with Facebook and Kik (among others) opening up their massive messenging platforms to bot developers. It’s an exciting time for chat interfaces, which are still in their infancy, and have the potential to overtake some more common application and web interfaces in popularity over time. Recently I attended a talk at <a href="http://nodevember.org/">Nodevember 2016</a> here in Nashville from <a href="https://twitter.com/saelia?lang=en">Sarah Sexton</a> about the Microsoft Bot Framework and was inspired to finally build a bot of my own.</p>
+
+<p>What intrigues me immediately about the <a href="https://dev.botframework.com/">Microsoft Bot Framework</a> is its integration with 8+ popular messenging services right out of the box, most notably Slack, Facebook Messenger and Kik. This enables you to write a bot one time in .NET or Node.js, host the application on Azure and distribute it across multiple platforms with ease. After finding the right documentation and tutorials, I was able to build and deploy my first simple bot in a matter of hours.</p>
+
+<p>To get started, I decided to encapsulate the spirit of “Yes Men” into a simple bot. Basically, any time someone sought agreement in a conversation, my YesBot should chime in with a random statement of agreement like “I couldn’t agree more!” or “I couldn’t have said it better myself”. Sometimes you just need someone to agree with you.</p>
+
+<p>There are a few different ways to get this done. I could just have YesBot respond to its name being attached to a message, for instance: “I write good code, yesbot?”. But that approach seemed a bit cheesy and would rarely come up in natural conversation. Another option is to look for certain phrases like “agreed?” or “what do you think” or “yes?”, which works a little better but requires a static understanding of potential intent.</p>
+
+<p>The approach I finally took was to use another one of Microsoft’s tools, <a href="https://www.luis.ai/">LUIS</a> (or Language Understanding Intelligent Service). LUIS is a machine-learning service that maps utterances (any message text) to pre-defined intents and entities. YesBot requires just two intents, RequestAgreement and None(no action), though I am experimenting with a third–Provoke–to give YesBot a little more character. LUIS works with simple training, where you provide sample utterances and label those against your specific intents. After you start pinging LUIS with real utterances, you are able to review and correct the decisions it makes, theoretically making the service more intelligent over time.</p>
+
+<p>So far, I have YesBot deployed personally to Slack, GroupMe and Skype–with more services planned–and I’m asking my friends to try and break it. After YesBot has been published to a public directory I’ll post an update. The source code is available <a href="https://github.com/mattkraatz/yesbot">here on GitHub</a>.</p>
+
+<p>If you’re looking to write your own bot with the Microsoft Bot Framework, I would highly suggest checking out these resources:</p>
+<ul>
+  <li><a href="https://blogs.msdn.microsoft.com/sarahsays/2016/06/01/microsoft-bot-framework-part-1/">Getting Started walkthrough</a></li>
+  <li><a href="http://www.c-sharpcorner.com/article/an-interactive-bot-application-with-luis-using-microsoft-bot/">Another walkthrough incorporating LUIS</a></li>
+</ul>
+
+<p>Happy coding!</p>
+
+
+  <hr>
+  <div class="PageNavigation">
+    
+    <div class="prev">
+      <p>Previous Post</p>
+      <a href="/2016/10/31/technologies-learned.html">&laquo; Technologies I've learned</a>
+    </div>
+    
+    
+  </div>
+</div>
+
+      </div>
+    </div>
+  </main>
+
+<script type="text/javascript" src="/bower_components/jquery/dist/jquery.min.js"></script>
+<script type="text/javascript" src="/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/bower_components/jquery.scrollTo/jquery.scrollTo.min.js"></script>
+<script type="text/javascript" src="/scripts.js"></script>
+</body>
+</html>
