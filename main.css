@@ -1,5 +1,5 @@
 html {
-  background-color: rgb(244,244,249);
+  background-color: rgb(211, 198, 198);
 }
 
 body {
@@ -11,6 +11,10 @@ body {
 
 #contentSection h1, h2, h3, h4 {
   font-family: 'Lora',serif;
+}
+
+#contentSection h1 {
+  font-weight: 700;
 }
 
 main {
@@ -42,14 +46,18 @@ main {
 
 #profile-photo {
   border-radius: 50%;
-  margin: 2.5em 10px 10px;
+  margin: 5px 10px 10px;
   max-width: 160px;
   float: right;
 }
 
 /* LINKS */
 a {
-  color: #586F7C;
+  color: rgb(84, 102, 84);
+}
+
+a:hover, a:active {
+  color: rgb(84, 102, 84);
 }
 
 img {
@@ -97,15 +105,22 @@ img {
 /* MAIN NAVIGATION */
 
 .mainNav li:hover {
-  background-color: #B8DBD9;
+  background-color: rgb(128, 105, 105);
+  color: white;
 }
 
 .nav-active {
-  background-color: #B8DBD9;
+  background-color: rgb(128, 105, 105);
+  color: white;
 }
 
 .mainNav a {
   text-decoration: none;
+  color: black;
+}
+
+.mainNav h2 {
+  color: black;
 }
 
 .mainNav {
@@ -113,13 +128,13 @@ img {
   max-width: 300px;
   position: fixed;
   top: 0px;
-  background: rgba(244,244,249,0.65);
+  background: rgba(94, 87, 87, 0.65);
 }
 
 #navWrapper {
   position: relative;
   top: 60%;
-  transform: translateY(-60%);
+  transform: translateY(-52%);
 }
 
 #navWrapper li {
@@ -155,6 +170,10 @@ img {
 
 #blog p {
   margin-top: 10px;
+}
+
+#blog .blog-date {
+  float: right;
 }
 
 
@@ -232,7 +251,7 @@ div.modal-content{
     height: 50px;
     position: fixed;
     top: 0px;
-    background: rgba(244,244,249,0.95);
+    background: rgba(94, 87, 87, 1);
     padding-right: 0;
   }
 
@@ -272,6 +291,11 @@ div.modal-content{
   .stick {
     top: 0 !important;
     transform: translateY(0) !important;
+  }
+
+  #blog .blog-date {
+    float: none;
+    display: block;
   }
 }
 

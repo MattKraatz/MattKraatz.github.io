@@ -4,14 +4,16 @@
 ---
 
 <section id="welcome">
-  <img src="/img/profile.png" alt="Matt Kraatz profile" id="profile-photo">
   <h1>Welcome</h1>
-  <p>
-    <strong>A problem solver at heart,</strong> I've excelled in my career as a business operations specialist and leader. In early 2016, I decided to extend this passion into software development, learning how to design, build and scale complex systems that are revolutionizing our world today. I'm a music enthusiast (all genres) and have called Nashville my home for almost ten years.
-  </p>
-  <p>
-    <strong>We should talk:</strong> if you like to build things, if you aren't afraid to play devil's advocate, if you have the scoop on a secret show, or if you know any good dad jokes. Thanks for visiting!
-  </p>
+  <div>
+    <img src="/img/profile.png" alt="Matt Kraatz profile" id="profile-photo">
+    <p>
+      <strong>A problem solver at heart,</strong> I've excelled in my career as a business operations specialist and leader. In early 2016, I decided to extend this passion into software development, learning how to design, build and scale complex systems that are revolutionizing our world today. I'm a music enthusiast (all genres) and have called Nashville my home for almost ten years.
+    </p>
+    <p>
+      <strong>We should talk:</strong> if you like to build things, if you aren't afraid to play devil's advocate, if you have the scoop on a secret show, or if you know any good dad jokes. Thanks for visiting!
+    </p>
+  </div>
   <div class="float-clear"></div>
 </section>
 <section id="portfolio">
@@ -29,7 +31,7 @@
       {% for post in site.posts %}
         <li>
           <a href="{{ post.url }}"><span style="font-size: 1.5em; font-weight: bold;">{{ post.title }}</span></a>
-          <span style="float: right; vertical-align: middle;">{{ post.date | date: "%B %-d, %Y" }}</span>
+          <span class="blog-date">{{ post.date | date: "%B %-d, %Y" }}</span>
           <br>
           <p>
             {{ post.excerpt | remove: '<p>' | remove: '</p>' }}
