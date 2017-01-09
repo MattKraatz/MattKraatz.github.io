@@ -1,5 +1,5 @@
 ---
-title: Mobile Developement with Xamarin
+title: Mobile Development with Xamarin
 ---
 
 For my final capstone project at Nashville Software School, I wanted to dive deep into native mobile development. Native apps still provide a better mobile experience than the mobile-optimized web, and with the right tools can be developed rather quickly. Intrigued by it's promise to deliver native iOS and Android apps from shared C# code, the tool I chose for this comprehensive capstone was [Xamarin](https://www.xamarin.com/).
