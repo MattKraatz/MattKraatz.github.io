@@ -15,11 +15,11 @@ $(document).ready(function() {
       $('.spotlightOutput').append(`
         <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
           <a href="#" data-toggle="modal" data-target="#${content[i].modal}">
+            <span class="spotlightTitle">${content[i].title}</span>
             <div class="spotlightDiv">
               <img src="${content[i].img_src}">
               <span class="helper"></span>
             </div>
-            <span class="spotlightTitle">${content[i].title}</span>
           </a>
         </div>
         `)
