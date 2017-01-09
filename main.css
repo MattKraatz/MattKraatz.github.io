@@ -36,12 +36,7 @@ main {
 
 /* WELCOME SECTION */
 
-#welcome {
-  margin-top: 0px !important;
-}
-
 #welcome h1 {
-  margin-top: 10px;
   display: inline;
 }
 

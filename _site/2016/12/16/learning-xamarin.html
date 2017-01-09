@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kraatz - Mobile Developement with Xamarin</title>
+  <link href="/bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lora:400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,400i,700" rel="stylesheet">
+  <link rel="icon" type="image/jpeg" href="/img/favicon.ico">
+  <link rel="stylesheet" type="text/css" href="/main.css">
+</head>
+<body>
+  <main class="container-fluid">
+    <div>
+      <img id="headerImg" src="/img/header.jpg">
+      <nav class="mainNav col-lg-4 col-md-3 col-sm-2 col-xs-2">
+        <div id="navWrapper">
+          <img src="/img/logo.png">
+          <h2>Navigation</h2>
+            <ul class="list-unstyled">
+              <a href="/#welcome"><li>Home</li></a>
+              <a href="/#portfolio"><li>Portfolio</li></a>
+              <a href="/#blog"><li>Blog</li></a>
+              <a href="/#contact"><li>Contact</li></a>
+            </ul>
+        </div>
+        <div id="navLinks" class="col-lg-4 col-md-3 col-sm-2 col-xs-2">
+          <a href="https://github.com/MattKraatz" target="_blank">
+            <img src="/img/icons/Github.svg">
+          </a>
+          <a href="https://twitter.com/MattKraatz" target="_blank">
+            <img src="/img/icons/Twitter.svg">
+          </a>
+          <a href="https://www.linkedin.com/in/matthewkraatz" target="_blank">
+            <img src="/img/icons/Linkedin.svg">
+          </a>
+        </div>
+      </nav>
+      <div class="col-lg-offset-3 col-md-offset-3 col-sm-offset-2 col-lg-9 col-md-9 col-sm-10 col-xs-12 container" id="contentSection">
+        <div class="blogContent">
+  <p><a href="/#blog" class="linkBack">Back to All Posts</a></p>
+
+  <h2>Mobile Developement with Xamarin</h2>
+  <p style="font-style: italic">Posted December 16, 2016 by Matt Kraatz </p>
+  <p>For my final capstone project at Nashville Software School, I wanted to dive deep into native mobile development. Native apps still provide a better mobile experience than the mobile-optimized web, and with the right tools can be developed rather quickly. Intrigued by it’s promise to deliver native iOS and Android apps from shared C# code, the tool I chose for this comprehensive capstone was <a href="https://www.xamarin.com/">Xamarin</a>.</p>
+
+<p>With Xamarin, I wrote 100% of my application’s business logic in a Portable Class Library, one time. Using Xamarin Forms, I wroted 100% of my application’s UI in that PCL as well, which then compiles into native UI elements for each platform. Additionally, Xamarin’s DependencyService allows you to access native features (like the camera, or device storage) from the PCL using dependency injection. Leveraging these concepts, my final product was an iOS and Android native app called <strong>Green Apron</strong>, that looks uniquely native on each platform, and only has one code base to build on or debug.</p>
+
+<div style="text-align:center">
+  <img src="/img/green-apron.png" alt="Green Apron logo" />
+</div>
+
+<p>I’m very proud of Green Apron, but it was definitely a process getting to the final product. Choosing my development environment, for instance, exhausted a couple days of trial and error, until finally settling on Visual Studio on an unlicensed copy of Windows 10 in Bootcamp on my Macbook Pro (it’s a long story). I also spent some time with Xamarin Studio on OSX, using it’s XAML Previewer to visualize view components. Otherwise, Visual Studio was the best IDE for this project as I was simultaneously developing Green Apron’s back-end with ASP.NET Core WebAPI.</p>
+
+<p>Learning Xamarin’s take on mobile development was challenging, but very rewarding and productive. Depending on the situation, I built views both programatically with C#, or via template with XAML (Xamarin’s XML-like markup language) and data binding. Navigation was accomplished through a Master-Detail page, pushing and popping pages and modals to the Navigation stack. I wrote an API to manage Green Apron-specific data, and also linked the client with Spoonacular’s API for recipe and ingredient data. Writing HTTP requests in C# was a new one for me, but just another obstacle that I overcame and added to my toolbelt for the future.</p>
+
+<p>It’s clear that Xamarin, recently acquired by Microsoft, has a strong community of support. It really feels like an up-and-coming star in mobile development, and I look forward to deepening my knowledge of the platform as I continue to develop this project and others.</p>
+
+<p>You can find out more about Green Apron and check out the code <a href="https://github.com/MattKraatz/greenapron">here on GitHub</a>.</p>
+
+
+  <hr>
+  <div class="PageNavigation">
+    
+    <div class="prev">
+      <p>Previous Post</p>
+      <a href="/2016/11/25/first-bot-with-machine-learning.html">&laquo; Building a bot with machine learning</a>
+    </div>
+    
+    
+  </div>
+</div>
+
+      </div>
+    </div>
+  </main>
+
+<script type="text/javascript" src="/bower_components/jquery/dist/jquery.min.js"></script>
+<script type="text/javascript" src="/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/bower_components/jquery.scrollTo/jquery.scrollTo.min.js"></script>
+<script type="text/javascript" src="/scripts.js"></script>
+</body>
+</html>
