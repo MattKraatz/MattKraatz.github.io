@@ -1,5 +1,5 @@
 html {
-  background-color: rgb(211, 198, 198);
+  background-color: rgb(244, 205, 199);
 }
 
 body {
@@ -42,13 +42,18 @@ main {
 
 #welcome h1 {
   margin-top: 10px;
+  display: inline;
+}
+
+#welcome div {
+  margin-top: 15px;
 }
 
 #profile-photo {
-  border-radius: 50%;
   margin: 5px 10px 10px;
   max-width: 160px;
   float: right;
+  border-radius: 5%;
 }
 
 /* LINKS */
@@ -77,11 +82,34 @@ img {
 }
 
 .spotlightOutput div {
-  min-height: 265px;
+  margin: 10px 0;
+  text-align: center;
 }
 
-.spotlightLogo {
-  border: 1px solid grey;
+.spotlightDiv {
+  height: 200px;
+}
+
+.spotlightDiv img {
+  max-width: 200px;
+  max-height: 200px;
+  vertical-align: middle;
+}
+
+#ghMore {
+  text-align: center;
+  margin: 1em 0 3em;
+}
+
+.helper {
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+
+.spotlightTitle {
+  padding: 10px;
+  display: block;
 }
 
 .techContainer {
@@ -128,7 +156,7 @@ img {
   max-width: 300px;
   position: fixed;
   top: 0px;
-  background: rgba(94, 87, 87, 0.65);
+  background: rgba(109, 46, 35, 0.65);
 }
 
 #navWrapper {

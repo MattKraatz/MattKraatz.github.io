@@ -1,13 +1,13 @@
 {"spotlight": [{
+  "img_src": "/img/green-apron.png",
+  "title": "Green Apron",
+  "modal": "apron"
+},{
   "img_src": "/img/groupme.png",
   "title": "GroupMe Memories",
   "modal": "groupme"
 },{
-  "img_src": "/img/under_construction.jpg",
-  "title": "Explore Nashville",
-  "model": "Lorem"
-},{
-  "img_src": "/img/under_construction.jpg",
-  "title": "Checkers",
-  "model": "Lorem"
+  "img_src": "/img/yesbot.png",
+  "title": "YesBot",
+  "modal": "yesbot"
 }]}

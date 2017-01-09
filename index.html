@@ -5,26 +5,30 @@
 
 <section id="welcome">
   <h1>Welcome</h1>
+  <img src="/img/profile.jpg" alt="Matt Kraatz profile" id="profile-photo">
   <div>
-    <img src="/img/profile.png" alt="Matt Kraatz profile" id="profile-photo">
     <p>
-      <strong>A problem solver at heart,</strong> I've excelled in my career as a business operations specialist and leader. In early 2016, I decided to extend this passion into software development, learning how to design, build and scale complex systems that are revolutionizing our world today. I'm a music enthusiast (all genres) and have called Nashville my home for almost ten years.
+      <strong>A problem solver at heart,</strong> I've excelled in my career as a business operations specialist and leader. In early 2016, I decided to extend this passion into software development, learning how to design, build and scale the complex systems that are revolutionizing our world today. I'm a music enthusiast (all genres) and have called Nashville my home for almost ten years.
     </p>
     <p>
-      <strong>We should talk:</strong> if you like to build things, if you aren't afraid to play devil's advocate, if you have the scoop on a secret show, or if you know any good dad jokes. Thanks for visiting!
+      <strong>We should talk:</strong> if you like to build things, if you like to play devil's advocate, if you have the scoop on a secret show... Thanks for visiting.
     </p>
   </div>
   <div class="float-clear"></div>
 </section>
+<hr>
 <section id="portfolio">
   <h1>Portfolio</h1>
   <h3>Major Projects</h3>
   <div class="spotlightOutput container-fluid"></div>
+  <h4 id="ghMore"><a href="https://github.com/MattKraatz">- More on GitHub -</a></h4>
+  <hr>
   <h3>Technologies</h3>
   <div class="container-fluid">
     <div class="technologyOutput"></div>
   </div>
 </section>
+<hr>
 <section id="blog">
   <h1>Blog: My Journey in Development</h1>
     <ul class="list-unstyled">
@@ -79,22 +83,61 @@
 </section>
 
 <!-- Modals -->
+<div class="modal fade" id="apron" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h3 class="modal-title" id="apronLabel">
+          <a href="https://github.com/MattKraatz/greenapron"><img src="/img/icons/Github.svg"></a>
+          Green Apron
+        </h3>
+      </div>
+      <div class="modal-body">
+        <a href="https://github.com/MattKraatz/greenapron"><img src="/img/screenshots/view-plans.png"></a>
+        <p>I've always liked to cook, but the process of planning of meal was a big deterrant. You have to find recipes, then compare a list of ingredients to what you may have stored in your pantry, and finally add the rest to a grocery list. Inevitably, I wound up purchasing ingredients that I already had stored away somewhere, or forget about ingredients I have and wind up throwing them away weeks later. Enter Green Apron.</p>
+        <p>Green Apron is a mobile-first, comprehensive meal planner, grocery list and pantry inventory system. Search thousands of recipes, bookmark your favorites, or add recipes to a meal plan and let Green Apron manage a grocery list and a digital pantry for you!</p>
+        <p>Green Apron was developed for Android and iOS mobile devices using Xamarin. Xamarin is a framework that delivers native applications with a shared Portable Class Library written in C#. And using Xamarin Forms, Green Apron renders native UI elements on each platform, providing a truly native experience.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
 <div class="modal fade" id="groupme" tabindex="-1" role="dialog">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h3 class="modal-title" id="myModalLabel">
+        <h3 class="modal-title" id="groupmeLabel">
           <a href="https://github.com/MattKraatz/groupme-export"><img src="/img/icons/Github.svg"></a>
           <a href="https://groupme-memories.firebaseapp.com/"><span class="glyphicon glyphicon-new-window"></span></a>
           GroupMe Memories
         </h3>
       </div>
       <div class="modal-body">
-        <img src="/img/screenshots/groupme.png">
-        <p>GroupMe Memories interfaces with the GroupMe API to retrieve entire conversation histories and allow you to traverse the message log in a familiar eBook format.</p>
-        <p>This project was born from a yearning within my friendgroup to relive the best parts of our group chat throughout the years, but GroupMe's standard app interface was never really intended to serve that purpose.</p>
-        <p>With GroupMe Memories, after a simple registration process, you can view an eBook for any of the groups you have access to. With our edit feature, you can add custom cover elements and even a foreword message. Then, you can access a public link to share your trip down memory lane with friends and family (no login required). Heck, even download the full list of text messages to CSV if you want, who are we to stop you!</p>
+        <a href="https://github.com/MattKraatz/groupme-export"><img src="/img/screenshots/groupme.png"></a>
+        <p>My friendgroup has chatted using GroupMe (a group message service) since 2010, and have always wanted the affordance to relive our old conversations, but GroupMe's interface has never been conducive to that.</p>
+        <p>With GroupMe Memories, download entire group conversations and view them as a eBook. Flip through page by page, or navigate directly to a specific date in time. Click on individual messages to add them to a separate, shareable Memories eBook, complete with statistics, popular messages, and personal highlights.</p>
+        <p>GroupMe Memories was developed with AngularJS, JQuery and TurnJS. Messages are retrieved via GroupMe's API; document store and hosting is provided by Firebase.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="yesbot" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h3 class="modal-title" id="yesbotLabel">
+          <a href="https://github.com/MattKraatz/yesbot"><img src="/img/icons/Github.svg"></a>
+          YesBot
+        </h3>
+      </div>
+      <div class="modal-body">
+        <a href="https://github.com/MattKraatz/yesbot"><img src="/img/screenshots/yesbot.png"></a>
+        <p>Sometimes you just need someone to agree with you... YesBot is a chatbot designed to agree with you and your friends. Add YesBot to your group and watch it respond to phrases like "do you agree?" and "what do you think?". The messages YesBot responds to might surprise and delight you.</p>
+        <p>YesBot was developed using the Microsoft Bot Framework. The Bot Framework enables multi-platform development with C#. Currently, YesBot is available for Slack, Skype and GroupMe, with further integrations planned. Language cognition is delivered with machine learning from Microsoft's LUIS Cognitive Service. This project is hosted on a free Microsoft Azure web service.</p>
       </div>
     </div>
   </div>

@@ -2,6 +2,12 @@
   "img_src": "/img/logos/Angular.svg",
   "title": "AngularJS"
 },{
+  "img_src": "/img/logos/aspdotnet.png",
+  "title": "ASP.NET"
+},{
+  "img_src": "/img/logos/azure.png",
+  "title": "Azure"
+},{
   "img_src": "/img/logos/Bootstrap.svg",
   "title": "Bootstrap"
 },{
@@ -10,6 +16,9 @@
 },{
   "img_src": "/img/logos/Browserify.svg",
   "title": "Browserify"
+},{
+  "img_src": "/img/logos/csharp.png",
+  "title": "C#"
 },{
   "img_src": "/img/logos/Css3.svg",
   "title": "CSS3"
@@ -41,6 +50,12 @@
   "img_src": "/img/logos/jQuery.svg",
   "title": "jQuery"
 },{
+  "img_src": "/img/logos/materalize.png",
+  "title": "Materialize"
+},{
+  "img_src": "/img/logos/dotnet.png",
+  "title": ".NET"
+},{
   "img_src": "/img/logos/NPM.svg",
   "title": "NPM"
 },{
@@ -49,6 +64,12 @@
 },{
   "img_src": "/img/logos/Sass.svg",
   "title": "Sass"
+},{
+  "img_src": "/img/logos/SQLite.png",
+  "title": "SQLite"
+},{
+  "img_src": "/img/logos/SQLserver.jpg",
+  "title": "SQL Server"
 },{
   "img_src": "/img/logos/Visual_Studio.svg",
   "title": "Visual Studio"
